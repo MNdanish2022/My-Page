@@ -24,6 +24,7 @@ html{
 body{
     background: #080808;
     color: #fff;
+    overflow: auto;
 }
 #header{
     width: 100%;
@@ -118,7 +119,7 @@ nav ul li a:hover::after{
     font-weight: 400;
     margin-top:10px;
     text-transform: capitalize;
-    line-height:35px;
+    line-height:30px;
 }
 .header-text h2 span{
     /* color: rgb(70, 177, 248); */
@@ -132,16 +133,20 @@ nav ul li a:hover::after{
 }
 .row{
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     flex-wrap: wrap;
-}   
+}
+.about-col-2{
+    height: 100%;
+    width: 100%;
+}
 .about-col-2 .about-p{
     margin-top: 20px;
     margin-bottom: 20px;
     font-size: 20px;
-    width: 100%;
-    /* text-transform: capitalize; */
-    line-height:1.5;
+    width:100%;
+    text-transform: capitalize;
+    line-height:40px;
 }
 
 .about-col-2 .progress-bars{
@@ -156,11 +161,11 @@ nav ul li a:hover::after{
 }
 .progress-bar .p-title{
     text-transform: uppercase;
-    font-size: 1.1rem;
+    /* font-size: 1.1rem; */
     font-weight: 500;
-    letter-spacing:1px;
+    /* letter-spacing:1px; */
     /* text-align: center; */
-    margin-bottom: 5px;
+    /* margin-bottom: 5px; */
 }
 .progress-bar .p-con{
     display: flex;
@@ -206,7 +211,7 @@ nav ul li a:hover::after{
     font-size:60px;
     font-weight: 600;
     color: white;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 .tab-titles{
     display: flex;
@@ -488,17 +493,14 @@ form .btn2{
         .sub-title{
             font-size: 40px;
         }
-        .about-col-1, .about-col-2{
-            flex-basis: 100%;
-        }
-        .about-col-1{
-            margin-bottom: 30px;
+        .about-col-2{
+            flex-basis:100%;
         }
         .about-col-2{
             font-size: 14px;
         }
         .tab-links{
-            font-size: 16px;
+            font-size: 1.5rem;
             margin-right: 20px;
         }
         .contact-left, .contact-right{
@@ -520,6 +522,13 @@ form .btn2{
         }
         #portfolio .work-list{
             grid-template-columns: none;
+        }
+        .header-text h3{
+            font-size: 1.5rem;
+        }
+        .header-text p{
+            font-size: 1.2rem;
+            line-height: 35px;
         }
         
     }
